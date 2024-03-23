@@ -90,7 +90,7 @@ def price(make,model,trim,mileage,car_type,cylinder,liter,doors,cruise,sound,lea
 		})
 	prediction=pipe.predict(input_data)[0]
 	return prediction
-st.title("Car Price Prediction :red_car: @drmurataltun")
+st.title("Car Price Prediction :red_car: @cihanaybek")
 st.write("Enter Car Details to predict the price of the car")
 make=st.selectbox("Make",df['Make'].unique())
 model=st.selectbox("Model",df[df['Make']==make]['Model'].unique())
